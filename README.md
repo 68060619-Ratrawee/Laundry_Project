@@ -2,6 +2,8 @@
 
 ## ส่วนที่ 1: ติดตั้ง SQL Server, SSMS และ ODBC Driver 17
 
+### ดาวน์โหลดที่ https://drive.google.com/drive/folders/1irIl3hucADoWOF18coyQ2ZGdMmAnPcH-
+
 1. ติดตั้ง **SQL Server 2019** โดยเลือกติดตั้งแบบ **SQL Server Authentication**
 2. ติดตั้ง **SSMS (SQL Server Management Studio)**
 3. ติดตั้ง **ODBC Driver 17 for SQL Server**
