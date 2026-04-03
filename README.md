@@ -265,7 +265,7 @@ DATABASES = {
 }
 ```
 
-- โดยสังเกตุ ชื่อ device จากภาพที่เราได้เข้า SSMS **ใน SETTING.PY** ต้องใส่ \ 2 อัน <br><br>
+- โดยสังเกตุ ชื่อ device จากภาพที่เราได้เข้า SSMS ใน **settings.py** ต้องใส่ \ 2 อัน <br><br>
 
 <img src="images/31.png" width="80%"><br><br>
 
