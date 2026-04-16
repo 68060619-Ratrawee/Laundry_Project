@@ -1,6 +1,6 @@
 # คู่มือการติดตั้งโปรเจกต์ ระบบจัดการร้านซักรีด (Laundary System)
 
-## ส่วนที่ 1: ติดตั้ง SQL Server, SSMS และ ODBC Driver 17 for SQL Server สำหรับเชื่อมต่อเเละจัดการฐานข้อมูล
+## ส่วนที่ 1: ติดตั้ง SQL Server 2019
 
 ### ดาวน์โหลดที่ https://drive.google.com/drive/folders/1irIl3hucADoWOF18coyQ2ZGdMmAnPcH-
 
