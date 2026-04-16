@@ -245,8 +245,7 @@ python -m pip install django mssql-django django-crispy-forms crispy-bootstrap5 
 <img src="images/30.png" width="70%"><br><br>
 
 ### 8) ตั้งค่าการเชื่อมต่อใน `settings.py` ในโฟลเดอร์โปรเจ็ค
-
-แก้ไขส่วน `DATABASES` ให้ตรงกับเครื่อง:
+ไปที่ `Laundry_Project-main>>laundry_project>>laundry_project>>settings.py` แก้ไขส่วน `DATABASES` ให้ตรงกับเครื่อง:
 
 ```python
 DATABASES = {
