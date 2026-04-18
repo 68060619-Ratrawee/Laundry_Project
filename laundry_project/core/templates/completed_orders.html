@@ -82,7 +82,7 @@
                     <tr class="order-row" 
                         data-start-date="{{ order.Order_Date|date:'Y-m-d' }}" 
                         data-end-date="{{ order.CompletedDate|date:'Y-m-d' }}"
-                        data-items="{{ order.AllItems }}"
+                        data-items="{{ order.ItemDetailsStr }}"
                         data-qty="{{ order.TotalQty }}"
                         data-price="{{ order.Totalprice|floatformat:2 }}">
                         <td class="text-center fw-bold text-primary align-middle col-bill">
