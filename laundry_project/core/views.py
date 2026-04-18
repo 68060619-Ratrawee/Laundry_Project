@@ -489,10 +489,15 @@ def completed_orders_list(request):
     with connection.cursor() as cursor:
         cursor.execute("SELECT * FROM vw_CompletedHistory ORDER BY CompletedDate DESC")
         orders_data = [dict(zip([col[0] for col in cursor.description], row)) for row in cursor.fetchall()]
-    return render(request, 'completed_orders.html', {
-        'orders': orders_data,
-        'current_employee': get_current_employee(request.user)
-    })
+
+    # ==== เพิ่ม 4 บรรทัดนี้ ก่อนบรรทัด return ====
+    for order in orders_data:
+        items = Order_Item.objects.filter(Order_id=order['Order_ID'])
+        details = [f"{i.Service.ServiceType} {i.Service.FabricType}:{i.Quantity}:{i.Price}" for i in items]
+        order['ItemDetailsStr'] = "|".join(details)
+    # ======================================
+
+    return render(request, 'completed_orders.html', {'orders': orders_data, 'current_employee': get_current_employee(request.user)})
 
 
 @login_required
